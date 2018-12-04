@@ -29,3 +29,4 @@ var Gato = /** @class */ (function (_super) {
     };
     return Gato;
 }(animal_1.Animal));
+exports.Gato = Gato;
