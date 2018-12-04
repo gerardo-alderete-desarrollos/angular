@@ -1,3 +1,11 @@
 "use strict";
 var numeroEstudiantes = 40;
 console.log('numero de estudiantes' + numeroEstudiantes);
+var cursoIniciado = true;
+var boolean = false;
+var nombreCurso = 'Angular desde cero';
+var contenidoCurso = "\n    Herramientas de Desarrolo\n    Introduccion a TypeScript\n    Introduccion a Angular\n\n";
+console.log('nombreCurso ' + nombreCurso);
+console.log('contenidoCurso ' + contenidoCurso);
+var bienvenidos = "Bienvenidos al curso " + nombreCurso;
+console.log(bienvenidos);
