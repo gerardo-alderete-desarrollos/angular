@@ -1,23 +1,22 @@
-let numeroEstudiantes:number = 40;
+//Arreglos
+let arregloA:number[] = [1,2,3,4,5];
+console.log('Arregloa: ', arregloA);
 
-console.log('numero de estudiantes' + numeroEstudiantes);
+let arregloB: Array<string>;
+arregloB = [ 'asdf', 'gerardo'];
+console.log('arreglob: ' + arregloB);
 
-let cursoIniciado: boolean = true;
-let boolean = false;
+//TypeScrips Enums
+enum DiaCurso { MARTES, VIERNES };
+enum DiasSemana { LUNES, MARTES, MIERCOLES, JUEVES, VIERNES };
 
-let nombreCurso: string = 'Angular desde cero';
-let contenidoCurso: string = `
-    Herramientas de Desarrolo
-    Introduccion a TypeScript
-    Introduccion a Angular
+let primerDia: DiaCurso;
+primerDia = DiaCurso.MARTES;
+console.log('pirmerdia ' , primerDia)
+console.log('pirmerdia(string) ' , DiaCurso[0]);
+console.log('pirmerdia(string) ' , DiaCurso[primerDia]);
+console.log('pirmerdia(string) ' , DiaCurso[DiaCurso.MARTES]);
 
-`;
-
-console.log('nombreCurso ' + nombreCurso );
-console.log('contenidoCurso ' + contenidoCurso );
-
-let bienvenidos: string = `Bienvenidos al curso ${nombreCurso}`;
-console.log(bienvenidos);
 
 
 
