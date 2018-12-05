@@ -8,8 +8,9 @@ export class Gato extends Animal{
     desplazar():void {
         console.log(`${this.nombre} camina sigilosamente`);
     }
-
+    
     ronronear(): void {
         console.log(`${this._nombre} esta ronroneando`)
+        
     }
 }
