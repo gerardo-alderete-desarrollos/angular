@@ -5,7 +5,7 @@ export class AppPage {
     return browser.get('/');
   }
 
-  getTitleText() {
+  getParagraphText() {
     return element(by.css('ed-root h1')).getText();
   }
 }
