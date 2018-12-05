@@ -5,5 +5,10 @@ var gato;
 gato = new gato_1.Gato('garfiel', 'Mongol');
 console.log('gato: ', gato);
 gato.desplazar();
+//Conversion de tipo (Cating)
 gato.ronronear();
+//Set nombre
+gato.nombre = 'Tom';
+//Get nombre
+console.log(gato.nombre);
 gato.ronronear();
