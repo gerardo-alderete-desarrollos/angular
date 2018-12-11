@@ -19,4 +19,9 @@ export class MaterialButtonComponent implements OnInit {
     }, 5000);
   }
 
+  onClick(e){
+    console.log('Evento de click');
+    console.log(e);
+  }
+
 }

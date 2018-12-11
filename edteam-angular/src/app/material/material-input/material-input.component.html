@@ -3,7 +3,10 @@
   <mat-form-field>
     <input matInput type="text" 
            placeholder="Nombre"
-           [value]="usuario.nombre">
+           [value]="usuario.nombre"
+           (keyup)="onKeyUp($event)"
+           (blur)="onBlur($event)"
+           >
   </mat-form-field>
 </div>
 

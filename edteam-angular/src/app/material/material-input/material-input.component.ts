@@ -17,4 +17,11 @@ export class MaterialInputComponent implements OnInit {
     }, 3000)
   }
 
+  onKeyUp($event){
+    console.log('keyup: ' + $event);
+  }
+
+  onBlur($event: FocusEvent){
+    console.log($event);
+  }
 }
