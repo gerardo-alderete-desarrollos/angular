@@ -1,9 +1,9 @@
 export class ClassEstudiante {
 
 
-    constructor(private id:number,
-                private nombre:string,
-                private ciudad: string){
+    constructor(public id:number,
+                public nombre:string,
+                public ciudad: string){
 
                 }
     getEdad(): number {

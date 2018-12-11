@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./material-input.component.scss']
 })
 export class MaterialInputComponent implements OnInit {
-
+  usuario = {
+    nombre: "Luis"
+  };
   constructor() { }
 
   ngOnInit() {
+    setTimeout(() => {
+      this.usuario.nombre = "Juan"
+    }, 3000)
   }
 
 }

@@ -6,8 +6,11 @@
 
 <h3>Botones con Elevacion</h3>
 <div>
-  <button mat-raised-button>Basico</button>
-  <button mat-raised-button color="primary">Primario Basico</button>
+  <button mat-raised-button 
+          [disabled]="!formulario.valido">Basico</button>
+  <button mat-raised-button 
+          color="primary" 
+          [disabled]="!formulario.valido">Primario Basico</button>
 </div>
 
 <h3>Botones con Iconos</h3>
