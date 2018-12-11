@@ -3,4 +3,6 @@ export interface Estudiante {
     nombre: string;
     ciudad: string;
     fotoURL?: string;
+    
+
 }
