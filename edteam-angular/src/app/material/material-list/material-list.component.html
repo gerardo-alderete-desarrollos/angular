@@ -1,25 +1,8 @@
 <mat-list>
-  <mat-list-item>
-    <img *ngIf="estudiante.fotoURL" mat-list-avatar [src]="estudiante2.fotoURL" alt="profile image">
-    <img *ngIf="!estudiante.fotoURL" mat-list-avatar [src]="DEFAULT_PICTURE" alt="profile image">
-    <span mat-line>{{ estudiante.nombre }}</span>  
-    <span mat-line>{{ estudiante.ciudad }}</span> 
+  <mat-list-item *ngFor="let e of listaEstudiantes">
+    <img *ngIf="e.fotoURL" mat-list-avatar [src]="e.fotoURL" alt="profile image">
+    <img *ngIf="!e.fotoURL" mat-list-avatar [src]="DEFAULT_PICTURE" alt="profile image">
+    <span mat-line>{{e.nombre }}</span>  
+    <span mat-line>{{ e.ciudad }}</span> 
   </mat-list-item>
-  <mat-list-item>
-      <img *ngIf="estudiante2.fotoURL" mat-line mat-list-avatar [src]="estudiante3.fotoURL" alt="profile image">
-    <img *ngIf="!estudiante2.fotoURL" mat-list-avatar [src]="DEFAULT_PICTURE" alt="profile image">
-
-      <span mat-line>{{ estudiante2.nombre }}</span>  
-      <span mat-line>{{ estudiante2.ciudad }}</span> 
-  </mat-list-item>
-  <mat-list-item>
-      <img *ngIf="estudiante3.fotoURL" mat-line mat-list-avatar src="https://openclipart.org/image/2400px/svg_to_png/294182/Bearded-Man-Profile.png" alt="profile image">
-    <img *ngIf="!estudiante3.fotoURL" mat-list-avatar [src]="DEFAULT_PICTURE" alt="profile image">
-
-      <span mat-line>{{ estudiante3.nombre }}</span>  
-      <span mat-line>{{ estudiante3.ciudad }}</span> 
-  
-  
-  </mat-list-item>
- 
 </mat-list>
