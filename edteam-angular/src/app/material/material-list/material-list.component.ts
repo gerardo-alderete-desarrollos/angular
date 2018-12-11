@@ -48,4 +48,7 @@ export class MaterialListComponent implements OnInit {
     }, 3000);
   }
 
+  onMouseClick($event){
+    console.log('Click on: ' , $event.nombre);
+  }
 }

@@ -1,4 +1,4 @@
-<mat-list-item >
+<mat-list-item (click)="onClick(estudiante)">
   <img *ngIf="estudiante.fotoURL" mat-list-avatar [src]="estudiante.fotoURL" alt="profile image">
   <img *ngIf="!estudiante.fotoURL" mat-list-avatar [src]="DEFAULT_PICTURE" alt="profile image">
   <span mat-line>{{estudiante.nombre }}</span>  

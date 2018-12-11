@@ -1,15 +1,7 @@
-<!-- <mat-list>
-  <mat-list-item *ngFor="let e of listaEstudiantes">
-    <img *ngIf="e.fotoURL" mat-list-avatar [src]="e.fotoURL" alt="profile image">
-    <img *ngIf="!e.fotoURL" mat-list-avatar [src]="DEFAULT_PICTURE" alt="profile image">
-    <span mat-line>{{e.nombre }}</span>  
-    <span mat-line>{{ e.ciudad }}</span> 
-  </mat-list-item>
-</mat-list> -->
-
 <mat-list>
   <ed-item-estudiante *ngFor="let e of listaEstudiantes"
-                    [estudiante]="e">
+                    [estudiante]="e"
+                    (onMouseClick)="onMouseClick($event)">
 
   </ed-item-estudiante>
 </mat-list>
