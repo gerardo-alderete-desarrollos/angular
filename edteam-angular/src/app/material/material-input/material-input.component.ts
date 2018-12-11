@@ -9,6 +9,10 @@ export class MaterialInputComponent implements OnInit {
   usuario = {
     nombre: "Luis"
   };
+
+  placeholder = {
+    nombre: 'Nombre'
+  }
   constructor() { }
 
   ngOnInit() {

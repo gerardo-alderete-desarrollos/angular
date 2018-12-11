@@ -2,7 +2,7 @@
 <div>
   <mat-form-field>
     <input matInput type="text" 
-           placeholder="Nombre"
+           [placeholder]="placeholder.nombre"
            [value]="usuario.nombre"
            (keyup)="onKeyUp($event)"
            (blur)="onBlur($event)"
@@ -14,7 +14,8 @@
 <div>
   <mat-form-field>
     <span matPrefix> +1&nbsp; </span>
-    <input matInput type="text" placeholder="Telefono">
+    <input matInput type="text" 
+           placeholder="Telefono">
     <span matSuffix>:-)</span>
   </mat-form-field>
 </div>
@@ -25,3 +26,4 @@
     <mat-hint>Calle y numero de domicilio</mat-hint>
   </mat-form-field>
 </h3>
+
