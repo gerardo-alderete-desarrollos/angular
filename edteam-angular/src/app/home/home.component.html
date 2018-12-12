@@ -1,3 +1,15 @@
-<p>
-  home works!
-</p>
+<div>
+  <mat-card>
+    <h3>Astronomy Picture of the Day</h3>
+    <img mat-card-avatar src="https://i.gifer.com/TEcu.gif">
+    <mat-card-header>
+      <mat-card-title>
+        {{apod.title}}
+      </mat-card-title>
+      <mat-card-subtitle>
+        {{apod.date}}
+      </mat-card-subtitle>
+      <img mat-card-image [src]="apod.url" >
+    </mat-card-header>
+  </mat-card>
+</div>
