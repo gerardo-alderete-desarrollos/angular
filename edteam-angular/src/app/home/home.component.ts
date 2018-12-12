@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Apod } from '../shared/model/apod';
+import { NasaApiService } from '../shared/services/nasa-api.service';
 
 @Component({
   selector: 'ed-home',
@@ -8,18 +9,13 @@ import { Apod } from '../shared/model/apod';
 })
 export class HomeComponent implements OnInit {
   apod: Apod;
-  constructor() { }
+  constructor(private nasaApi: NasaApiService) {
 
+
+   }
+ 
   ngOnInit() {
-    this.apod = {
-      date: "",
-      explanation: "",
-      hdurl: "",
-      media_type: "",
-      service_version: "",
-      title: "",
-      url: ""
-    }
+    this.apod = this.nasaApi.getApod();
   }
 
 }
