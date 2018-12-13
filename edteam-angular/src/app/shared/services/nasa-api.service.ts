@@ -11,10 +11,10 @@ export class NasaApiService {
   constructor(private http:HttpClient) { }
 
   getApod(): Observable<Apod>{
-    // return this.DATA;
-
-    return this.http.get<Apod>(APOD_URL + '?api_key=' + API_KEY);
-
+    
+    
+    // return this.http.get<Apod>(APOD_URL + '?api_key=' + API_KEY);
+    return this.http.get<Apod>(`${APOD_URL}?api_key=${API_KEY}`);
 
   }
 
