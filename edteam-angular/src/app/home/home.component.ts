@@ -9,6 +9,7 @@ import { NasaApiService } from '../shared/services/nasa-api.service';
 })
 export class HomeComponent implements OnInit {
   apod: Apod;
+  error: string;
   constructor(private nasaApi: NasaApiService) {
 
 
@@ -17,7 +18,15 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.nasaApi.getApod()
       .subscribe((data: Apod) => {
-        this.apod = data;
+        setTimeout(()=> {
+          this.apod = data;
+        },1500);
+
+      }, error => {
+        setTimeout( () => {
+          console.log('Error al conectar con el servidor');
+          this.error = 'Error al conectar con el servidor';
+        }, 2000); 
       });
   }
 

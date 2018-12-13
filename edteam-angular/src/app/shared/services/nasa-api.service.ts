@@ -7,15 +7,7 @@ const APOD_URL = 'https://api.nasa.gov/planetary/apod';
 const API_KEY = 'DEMO_KEY';
 @Injectable()
 export class NasaApiService {
-  private readonly DATA: Apod = {
-      date: "",
-      explanation: "",
-      hdurl: "",
-      media_type: "",
-      service_version: "",
-      title: "",
-      url: ""
-  }
+
   constructor(private http:HttpClient) { }
 
   getApod(): Observable<Apod>{
